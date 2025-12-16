@@ -50,7 +50,7 @@ else{
                       </div>
                     </div>
                     <div class="col-md-4">
-                      <input type="text" name="product_src" id="product_src" class="form-control form-control-sm" placeholder="Search by Product Name" onkeyup="getProduct(this.value)">
+                      <input type="text" name="product_src" id="product_src" class="form-control form-control-sm" placeholder="Search by Product Name" onkeyup="getProduct()">
                     </div>
                   </div>
                   <div class="row">
@@ -208,9 +208,10 @@ else{
       getPayList();
       $("#product_src").focus();
     });
-    function getProduct(product_src){
+    function getProduct(){
       var product_typ = $('#product_typ').val();
       var emp_id = $('#emp_id').val();
+      var product_src = $('#product_src').val();
       $("#divProductList").html("Loading... <i class='fa fa-spinner fa-spin'></i>");
       setTimeout(function(){ $("#divProductList").load("jquery-pages/load-billing-product-list.php?product_typ="+product_typ+"&emp_id="+emp_id+"&product_src="+encodeURIComponent(product_src)).fadeIn("fast") }, 500);
     }
@@ -272,6 +273,11 @@ else{
     }
     function getReturnInfo(){
       $("#div_lightbox").load("lightbox/billing-return-invoice.php").fadeIn("fast");
+      $('#modal-report').modal('show');
+    }
+    // Add Product Modal
+    function addProduct(){
+      $("#div_lightbox").load("lightbox/add-product.php").fadeIn("fast");
       $('#modal-report').modal('show');
     }
     function getCustomerInfo(){

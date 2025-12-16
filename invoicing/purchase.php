@@ -64,7 +64,7 @@ else{
                       <div class="col-lg-3">
                         <div class="form-group">
                           <label>Product Type</label>
-                          <select class="form-control" name="product_typ" id="product_typ" onchange="getProduct('')">
+                          <select class="form-control" name="product_typ" id="product_typ" onchange="getProduct()">
                             <?php
                             $getProductCategory=mysqli_query($conn,"SELECT * FROM `inventory_category` WHERE `stat`=1 ORDER BY `category_name`");
                             while($rowProductCategory=mysqli_fetch_array($getProductCategory)){
@@ -81,7 +81,7 @@ else{
                     <div class="row">
                       <div class="col-md-7"><h5>Product List</h5></div>
                       <div class="col-md-5">
-                        <input type="text" name="product_src" id="product_src" class="form-control" placeholder="Search by Product Name & Code" onkeyup="getProduct(this.value)">
+                        <input type="text" name="product_src" id="product_src" class="form-control" placeholder="Search by Product Name & Code" onkeyup="getProduct()">
                       </div>
                     </div>
                     <div class="row">
@@ -146,13 +146,14 @@ else{
     <script type="text/javascript" src="invoicing-js/purchase.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-        getProduct('');
+        getProduct();
         getTempProduct();
         $("#product_src").focus();
       });
-      function getProduct(product_src){
+      function getProduct(){
         var product_typ = $('#product_typ').val();
         var emp_id = $('#emp_id').val();
+        var product_src = $('#product_src').val();
         $("#divProductList").html("Loading... <i class='fa fa-spinner fa-spin'></i>");
         setTimeout(function(){ $("#divProductList").load("jquery-pages/load-purchase-product-list.php?product_typ="+product_typ+"&emp_id="+emp_id+"&product_src="+encodeURIComponent(product_src)).fadeIn("fast") }, 1000);
       }
@@ -192,6 +193,11 @@ else{
       }
       function del_tmp_product(sl,fun_nm,tbl_nm){
         $("#divTemp").load("invoicing-code/delete-temp-product.php?sl="+sl+"&fun_nm="+fun_nm+"&tbl_nm="+tbl_nm).fadeIn("fast");
+      }
+      // Add Product Modal
+      function addProduct(){
+        $("#div_lightbox").load("lightbox/add-product.php").fadeIn("fast");
+        $('#modal-report').modal('show');
       }
       function getDiscount(dis_per){
         $.get("jquery-pages/get-purchase-discount-amount.php?dis_per="+dis_per, function(data){

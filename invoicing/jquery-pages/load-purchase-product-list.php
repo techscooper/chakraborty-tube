@@ -15,7 +15,9 @@ if($ckadmin==1){
       <thead>
         <tr>
           <th class="text-center" style="width:5%;">#</th>
-          <th class="text-center" style="width:35%;">Product</th>
+          <th class="text-center" style="width:35%;">
+            Product <a href="javascript:void(0);" onclick="addProduct()"><i class="fa fa-plus-circle"></i> Add</a>
+          </th>
           <th class="text-center" style="width:20%;">Quantity</th>
           <th class="text-center" style="width:15%;">Rate</th>
           <th class="text-center" style="width:15%;">Price</th>

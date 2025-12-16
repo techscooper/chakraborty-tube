@@ -12,7 +12,9 @@ if($ckadmin==1){
     <table class="table table-bordered">
       <thead>
         <tr>
-          <th class="text-center" style="width:25%;">Product</th>
+          <th class="text-center" style="width:25%;">
+            Product <a href="javascript:void(0);" onclick="addProduct()"><i class="fa fa-plus-circle"></i> Add</a>
+          </th>
           <th class="text-center" style="width:10%;">HSN Code</th>
           <th class="text-center" style="width:20%;">Quantity</th>
           <th class="text-center" style="width:20%;">Rate</th>

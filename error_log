@@ -1,0 +1,16 @@
+[14-May-2025 23:08:20 UTC] PHP Warning:  Undefined array key "fn" in /home/demomein/public_html/stockCTS/spot-update.php on line 3
+[14-May-2025 23:08:20 UTC] PHP Warning:  Undefined array key "fv" in /home/demomein/public_html/stockCTS/spot-update.php on line 4
+[14-May-2025 23:08:20 UTC] PHP Warning:  Undefined array key "div" in /home/demomein/public_html/stockCTS/spot-update.php on line 5
+[14-May-2025 23:08:20 UTC] PHP Warning:  Undefined array key "tblnm" in /home/demomein/public_html/stockCTS/spot-update.php on line 6
+[21-May-2025 08:44:04 Asia/Kolkata] PHP Warning:  Undefined array key "fn" in /home/demomein/public_html/stockCTS/spot-updates.php on line 5
+[21-May-2025 08:44:04 Asia/Kolkata] PHP Warning:  Undefined array key "fv" in /home/demomein/public_html/stockCTS/spot-updates.php on line 6
+[21-May-2025 08:44:04 Asia/Kolkata] PHP Warning:  Undefined array key "div" in /home/demomein/public_html/stockCTS/spot-updates.php on line 7
+[21-May-2025 08:44:04 Asia/Kolkata] PHP Warning:  Undefined array key "tblnm" in /home/demomein/public_html/stockCTS/spot-updates.php on line 8
+[18-Aug-2025 10:55:09 UTC] PHP Warning:  Undefined array key "fn" in /home/demomein/public_html/stockCTS/spot-update.php on line 3
+[18-Aug-2025 10:55:09 UTC] PHP Warning:  Undefined array key "fv" in /home/demomein/public_html/stockCTS/spot-update.php on line 4
+[18-Aug-2025 10:55:09 UTC] PHP Warning:  Undefined array key "div" in /home/demomein/public_html/stockCTS/spot-update.php on line 5
+[18-Aug-2025 10:55:09 UTC] PHP Warning:  Undefined array key "tblnm" in /home/demomein/public_html/stockCTS/spot-update.php on line 6
+[09-Sep-2025 13:00:53 Asia/Kolkata] PHP Warning:  Undefined array key "fn" in /home/demomein/public_html/stockCTS/spot-updates.php on line 5
+[09-Sep-2025 13:00:53 Asia/Kolkata] PHP Warning:  Undefined array key "fv" in /home/demomein/public_html/stockCTS/spot-updates.php on line 6
+[09-Sep-2025 13:00:53 Asia/Kolkata] PHP Warning:  Undefined array key "div" in /home/demomein/public_html/stockCTS/spot-updates.php on line 7
+[09-Sep-2025 13:00:53 Asia/Kolkata] PHP Warning:  Undefined array key "tblnm" in /home/demomein/public_html/stockCTS/spot-updates.php on line 8
